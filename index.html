@@ -1,23 +1,13 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>JS Todo List</title>
-        <link href="styles.css" rel="stylesheet">
-    </head>
-    <body>
-        <div id="page-wrapper">
-            <div class="header">
-                <div class="header-title">JS Todo List</div>
-            </div>
-            <div class="inputBar">
-                <input type="text" name="todoInput" class="input-element" placeholder="What's the plan, Stan?" id="todoInput">
-            </div>
-            <button id="addTodo">Submit</button>
-            <div id="todoList">
-
-            </div>
+    <html>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <div id="myTodo" class="header"> 
+            <h2>Todo List</h2>
+            <input type="text" id="todoInput" placeholder="Todo..." />
+            <span onclick="newItem()" class="addItemBtn">Add Item</span>
         </div>
-        <script src="./index.js"></script>
-    </body>
-</html>
+
+        <ul id="myList">
+            <li>do good</li>
+        </ul>
+    </html>
